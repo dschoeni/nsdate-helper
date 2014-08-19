@@ -60,6 +60,7 @@ static NSDateFormatter *_displayFormatter = nil;
             }
             if (_displayFormatter == nil) {
                 _displayFormatter = [[NSDateFormatter alloc] init];
+            	_displayFormatter.timeZone = [NSTimeZone timeZoneForSecondsFromGMT:0];
             }
         }
     });
